@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чоловічий одяг</title>
+    <style>
+        body {
+            background-color: #8B4513; /* Коричневий фон */
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav {
+            background-color: #6A4F2A; /* Темний коричневий фон навігації */
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стилі для нового навігаційного блоку категорій */
+        .categories-nav {
+            background-color: #D2691E; /* Помаранчево-коричневий фон для блоку категорій */
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .categories-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .categories-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            width: 400px; /* Збільшене фото для повного зросту */
+            height: auto;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #6A4F2A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навігаційний блок -->
+    <div class="nav">
+        <a href="#">Головна</a>
+        <a href="#">Каталог</a>
+        <a href="#">Про нас</a>
+        <a href="#">Контакти</a>
+    </div>
+
+    <!-- Навігаційний блок для категорій -->
+    <div class="categories-nav">
+        <a href="#shirts">Сорочки</a>
+        <a href="#jackets">Куртки</a>
+        <a href="#pants">Штани</a>
+        <a href="#suits">Костюми</a>
+        <a href="#accessories">Аксесуари</a>
+    </div>
+
+    <h1>Магазин чоловічого одягу</h1>
+
+    <div class="container">
+        <!-- Фото чоловіка в повний зріст -->
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" alt="Фото чоловіка в повний зріст">
+        </div>
+
+        <!-- Список категорій одягу -->
+        <h2 id="shirts">Категорії: Сорочки</h2>
+        <ul>
+            <li>Сорочка класична</li>
+            <li>Сорочка з коротким рукавом</li>
+        </ul>
+
+        <h2 id="jackets">Категорії: Куртки</h2>
+        <ul>
+            <li>Куртка зимова</li>
+            <li>Куртка осіння</li>
+        </ul>
+
+        <h2 id="pants">Категорії: Штани</h2>
+        <ul>
+            <li>Штани повсякденні</li>
+            <li>Штани спортивні</li>
+        </ul>
+
+        <h2 id="suits">Категорії: Костюми</h2>
+        <ul>
+            <li>Костюм діловий</li>
+            <li>Костюм вечірній</li>
+        </ul>
+
+        <h2 id="accessories">Категорії: Аксесуари</h2>
+        <ul>
+            <li>Годинники</li>
+            <li>Ремені</li>
+        </ul>
+
+        <!-- Таблиця з популярними товарами -->
+        <h2>Популярні товари:</h2>
+        <table>
+            <tr>
+                <th>Назва</th>
+                <th>Ціна</th>
+                <th>Наявність</th>
+            </tr>
+            <tr>
+                <td>Сорочка класична</td>
+                <td>800 грн</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Куртка зимова</td>
+                <td>2500 грн</td>
+                <td>В наявності</td>
+            </tr>
+            <tr>
+                <td>Штани повсякденні</td>
+                <td>600 грн</td>
+                <td>Немає в наявності</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
